@@ -83,6 +83,11 @@ h1 {
   margin: 0;
 }
 
+.fa-ul {
+  margin-left: 1.25em;
+}
+
+
 
 h2 {
   font-size: 14px;
@@ -101,6 +106,12 @@ hr {
   display: none;
 }
 
+@media print {
+  body { background: #fff; }
+  .container { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+}
+
 @media (max-width: 640px) {
   .header {
     flex-direction: column;
@@ -110,11 +121,4 @@ hr {
     width: 80px;
     height: 80px;
   }
-
-@media print {
-  body { background: #fff; }
-  .container { margin: 0; }
-  a { color: inherit; text-decoration: none; }
-}
-
 }
